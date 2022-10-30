@@ -7,9 +7,9 @@ const server = supertest.agent(app);
 
 describe('GET /', () => {
   it('should test singe route', async () => {
-    const res = await server.get(`/`);
+    const res = await server.get(`/?cool=dj`);
 
-    assert.equal(res.status, 201);
+    assert.equal(res.status, 200);
   });
 });
 
