@@ -9,7 +9,7 @@ describe('GET /', () => {
   it('should test singe route', async () => {
     const res = await server.get(`/?cool=dj`);
 
-    assert.equal(res.status, 200);
+    assert.equal(res.status, 201);
   });
 });
 
